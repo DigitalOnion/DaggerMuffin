@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DaggerMuffin</string>
+    <string name="btn_second_activity">go to Second Activity</string>
+    <string name="btn_main_activity">go to Main Activity</string>
+    <string name="txt_empty_component">empty component</string>
+    <string name="txt_empty_subcomponent_main">empty subcomponent main activity</string>
+    <string name="txt_empty_subcomponent_second">empty subcomponent second activity</string>
 </resources>
