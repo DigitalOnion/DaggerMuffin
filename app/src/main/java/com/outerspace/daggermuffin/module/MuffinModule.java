@@ -1,7 +1,6 @@
 package com.outerspace.daggermuffin.module;
 
-import com.outerspace.daggermuffin.model.MuffinPojo;
-import com.outerspace.daggermuffin.model.MuffinPojo_Factory;
+import com.outerspace.daggermuffin.model.Muffin;
 
 import javax.inject.Singleton;
 
@@ -12,8 +11,8 @@ import dagger.Provides;
 public class MuffinModule {
 
     @Provides @Singleton
-    MuffinPojo provideMuffinPojo() {
-        MuffinPojo muffin = new MuffinPojo();
+    Muffin provideMuffinPojo() {
+        Muffin muffin = new Muffin();
         muffin.muffinFlavor = "no flavor";
         return muffin;
     }

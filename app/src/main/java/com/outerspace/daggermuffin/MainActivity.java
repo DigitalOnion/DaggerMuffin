@@ -3,12 +3,14 @@ package com.outerspace.daggermuffin;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+
 import com.outerspace.daggermuffin.component.DaggerMuffinComponent;
 import com.outerspace.daggermuffin.component.MuffinComponent;
-import com.outerspace.daggermuffin.model.MuffinPojo;
+import com.outerspace.daggermuffin.model.Muffin;
 
 import javax.inject.Inject;
 
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     MuffinComponent component;
 
     @Inject
-    MuffinPojo muffin;
+    Muffin muffin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         component = DaggerMuffinComponent.builder().build();
     }
+
+
 
     @Override
     protected void onStart() {
@@ -44,4 +48,5 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
 }
